@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for pdf in ../{en,es}/*.pdf; do
+    gpg --output "${pdf}.sig" --detach-sig "${pdf}"
+done
